@@ -1,0 +1,167 @@
+body {
+	font-family: 'Chelsea Market', cursive;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #B6D8D0;
+	background-image: url(../assets/grille2.png);
+}
+input {
+	font-family: 'Chelsea Market', cursive;
+}
+/* Container styles */
+
+.main {
+	width: 100%;
+	height: 100%;
+	padding: 5em;
+	display: flex;
+	flex-direction: column;
+	align-items: right;
+	font-size: 1.8em;
+}
+.main.around {
+	justify-content: space-around;
+}
+.main.between {
+	justify-content: space-between;
+}
+/* Text styles*/
+
+.green {
+	color: #8dc740
+}
+.green2 {
+	color: #5AA373;
+}
+.gray {
+	color: #676767;
+}
+.purple {
+	color: #67296B;
+}
+.blue {
+	color: #214A65;
+}
+.blue2 {
+	color: #161CAE;
+}
+.blue3 {
+	color: darkturquoise;
+}
+.orange {
+	color: #AB4021;
+}
+header.title {
+	position: absolute;
+	top: 80px;
+	font-size: 3em;
+	color: #367E8B;
+	text-align: center;
+}
+.description {
+	position: absolute;
+	font-size: 1em;
+	color: 791D1E;
+	text-align: left;
+}
+.coucou {
+	position: absolute;
+	top: 208px;
+	left: 100px;
+	text-align: center;
+	font-size: 2em;
+	color: #CDC05B;
+}
+#prenom-affichage {
+	font-size: 3em;
+	color: #0B4215;
+	min-height: 113px;
+}
+.input {
+	position: absolute;
+	top: 18.3em;
+	left: 350px;
+	text-align: center;
+}
+.bravo {
+	font-size: 3em;
+	text-align: center;
+	color: #0B4215;
+}
+.tuSais {
+	font-size: 2em;
+	color: #7D0B0D;
+}
+.suite {
+	right: 50px;
+	bottom: 50px;
+	position: absolute;
+	font-size: 1em;
+	color: #AB4021;
+	text-decoration: none;
+}
+.instruction {
+	font-size: 1em;
+	color: #000000;
+	text-align: left;
+	position: absolute;
+	left: 780px;
+	top: 113px;
+}
+input {
+	background-color: #B6D8D0;
+	color : #5AA373;
+	font-family : 'Chelsea Market';
+	font-size: 30px;
+	border : 4px solid #5AA373;
+}
+#total {
+	margin-left: 180px;
+	margin-top: 16px;
+	color: #0B4215;
+	font-size: 1.5em;
+	min-height: 56px;
+}
+/* Variables schema */
+
+.variable-schema {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+.variable-schema>* {
+	font-family: 'Bellefair', serif;
+	font-size: 1.2em;
+	position: absolute;
+}
+.variable-schema .variable-name {
+	top: 0;
+	left: 20px;
+}
+.variable-schema .variable-declaration {
+	top: 100px;
+	left: 0px;
+}
+.variable-schema .variable-keyword {
+	top: 200px;
+	left: 0;
+}
+.variable-schema .variable-value {
+	top: 200px;
+	left: 700px;
+	text-align: center;
+}
+/* conditions */
+.if-arrow, .if-arrow2 {
+	position: absolute;
+	top: 65px;
+	width: 97px;
+	left: -78px;
+	transform: rotate(29deg);
+}
+
+.if-arrow2{
+	top:-158px;
+}
