@@ -5,7 +5,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #B6D8D0;
-	/*background-image: url(../assets/grille2.png);*/
+background-image: url(../assets/grille2.png);
 }
 input {
 	font-family: 'Chelsea Market', cursive;

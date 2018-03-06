@@ -5,7 +5,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #B6D8D0;
-	/*background-image: url(../assets/grille2.png);*/
+	background-image: url(../assets/grille2.png);
 }
 input {
 	font-family: 'Chelsea Market', cursive;
@@ -15,18 +15,12 @@ input {
 .main {
 	width: 100%;
 	height: 100%;
-	padding: 5em;
+	padding: 24px;
 	display: flex;
-	flex-direction: column;
-	align-items: right;
+	flex-direction: row;
 	font-size: 1.8em;
 }
-.main.around {
-	justify-content: space-around;
-}
-.main.between {
-	justify-content: space-between;
-}
+
 /* Text styles*/
 
 .green {
@@ -56,38 +50,61 @@ input {
 .red {
 	color: #AA223F;
 }
-
-img {
-	float: center;
-	margin-top: 150px;
-	margin-left: 432px;
-    height: 470px;
-    width: 3px;
+.left {
+	display:flex;
+	flex-direction: column;
+	width: 536px;
 }
-
-header.title {
-	position: absolute;
-	top: 0px;
-	left: 30px;
+.right {
+	display:flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	flex: 1;
+}
+.left header.title {
 	font-size: 3em;
 	color: #367E8B;
 	text-align: center;
+	margin-bottom:66px;
 }
-header.indexTitle {
-	position: absolute;
-	top: 0px;
-	left: 30px;
+.left header.title.index {
 	font-size: 5em;
-	color: #367E8B;
-	text-align: center;
+	margin-bottom:0;
+	margin-top: -10px;
 }
-.description {
-	position: absolute;
+.left .description {
 	font-size: 1em;
 	color: #791D1E;
 	text-align: left;
-	left: 30px;
-	top: 200px;
+}
+.right .nav {
+	display : inline;
+	padding : 0 0.5em;
+	list-style-type : none;
+	font-size: 0.6em;
+}
+/* Je sélectionne les <li> du menu horizontal */
+.right .nav ul#menu_horizontal li {
+	display : inline;
+	padding : 0 0.5em; /* Pour espacer les boutons entre eux */
+}
+.right .nav ul#menu_horizontal li a {
+	color: #AB4021;
+	text-decoration: none;
+}
+.right .nav ul#menu_horizontal {
+	list-style-type : none; /* Car sinon les puces se placent n'importe où */
+}
+.right .suite {
+	margin-right: 12px;
+	transition: all 0.3s;
+	font-size: 1em;
+	color: #AB4021;
+	text-decoration: none;
+}
+.right .suite:hover {
+	font-size: 1.4em;
 }
 .coucou {
 	position: absolute;
@@ -110,7 +127,7 @@ header.indexTitle {
 	text-align: center;
 }
 header.bravo {
-	position:absolute;
+	position: absolute;
 	font-size: 3em;
 	text-align: left;
 	color: #0B4215;
@@ -122,23 +139,12 @@ header.bravo {
 	font-size: 2em;
 	color: #7D0B0D;
 	left: 30px;
-	top:350px;
+	top: 350px;
 }
 .exercice {
 	top: 200px;
 	left: 650px;
 	position: absolute;
-}
-.suite {
-	right: 50px;
-	bottom: 50px;
-	position: absolute;
-	font-size: 1em;
-	color: #AB4021;
-	text-decoration: none;
-}
-.suite:hover {
-	font-size: 140%;
 }
 .instruction {
 	position: absolute;
@@ -162,25 +168,6 @@ input {
 	top: 400px;
 	right: 450px;
 	position: absolute;
-}
-.nav {
-	display : inline;
-	padding : 0 0.5em;
-	list-style-type : none;
-	text-decoration: none;
-	font-size: 0.6em;
-	color: #AB4021;
-	position: absolute;
-	left: 39.2em;
-	top: 35px;
-}
-/* Je sélectionne les <li> du menu horizontal */
-ul#menu_horizontal li {
-	display : inline;
-	padding : 0 0.5em; /* Pour espacer les boutons entre eux */
-}
-ul#menu_horizontal {
-	list-style-type : none; /* Car sinon les puces se placent n'importe où */
 }
 .listeLiens:hover {
 	font-size: 140%;
@@ -270,11 +257,18 @@ table {
 	font-family: 'Bellefair', serif;
 	font-size: 1.2em;
 	position: absolute;
-
 }
 .variable-schema .variable-declaration {
 	top: 200px;
 	left: 600px;
 }
 
-
+@media screen and (max-width: 640px) {
+	.main{
+		flex-direction: column;
+	}
+	.left{
+		width:auto;
+	}
+	
+}
