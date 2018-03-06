@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>LearnToCode</title>
+<title>Cocody</title>
+<script src="scripts/jquery-3.3.1.min.js"></script>
+<script src="scripts/variables.js"></script>
 
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
@@ -17,19 +19,30 @@
 
 <body>
 <div class="main around">
-<div class="instruction">Ecris deux prénoms de tes amis<br>
-  dans les deux cases vertes.</div>
-<div class="variable-schema">
-  <div class="variable-name"><span class="purple">function</span> <span class="blue2"> saluer</span><span class="blue"> (</span><span class="orange">nom</span><span class="blue">) { <span/><br>
-    <span class="purple">if</span><span class="blue"> (</span> <span class="orange"><span class="orange"></span>nom</span> <span class="blue">== '
-    <input type="prénom" size="5" style="height:35px;" />
-    ' || </span><span class="orange">nom </span><span class="blue">== '</span>
-    <input type="prénom" size="5" style="height:35px;" />
-    ') <br>
-    } </div>
-  <div class="variable-keyword"> <span class="purple">Ce mot montre une condition <br>
-    « Si...»</span> </div>
-  <img class="if-arrow" src="assets/fleche.png"/> </div>
+<header class="title">Les conditions</header>
+<nav class="nav">
+ <ul id="menu_horizontal">
+  <li><a href="index.html">Accueil</a></li>
+  <li><a href="variables-def.html">Les variables</a></li>
+  <li><a href="fonction-def.html">Les fonctions</a></li>
+  <li><a href="condition-def.html">Les conditions</a></li>
+  <li><a href="tableau-def.html"> Les tableaux</a></li>
+  <li><a href="">L'objet</a></li>
+	</ul>
+</nav>
+ <img src="assets/separation.png"/>
+<div class="instruction"><span class="red">Ecris deux prénoms de tes amis</span><br>
+  dans les deux cases vertes.<br>
+  <span class="purple"><br>
+  <br>
+  « if »</span> montre une condition : <span class="purple">« Si...»</span></div>
+<div class="exercice"> <span class="purple">function</span> <span class="blue2"> saluer</span><span class="blue"> (</span><span class="orange">nom</span><span class="blue">) { <span/><br>
+  <span class="purple">if</span><span class="blue"> (</span> <span class="orange"><span class="orange"></span>nom</span> <span class="blue">== ‘
+  <input type="prénom" size="5" style="height:35px;" />
+  ’ || </span><span class="orange">nom </span><span class="blue">== ‘ </span>
+  <input type="prénom" size="5" style="height:35px;" />
+  ’) <br>
+  } </div>
 <a class="suite" href="condition-2.html">Suite</a>
 </body>
 </html>

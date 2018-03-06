@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>LearnToCode</title>
-
+<title>Cocody</title>
 <script src="scripts/jquery-3.3.1.min.js"></script>
 <script src="scripts/coucou.js"></script>
 <!-- fonts -->
@@ -20,22 +19,36 @@
 
 <body>
 <div class="main around">
+  <header class="title">Les variables</header>
+  <nav class="nav">
+   <ul id="menu_horizontal">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="variables-def.html">Les variables</a></li>
+    <li><a href="fonction-def.html">Les fonctions</a></li>
+    <li><a href="condition-def.html">Les conditions</a></li>
+    <li><a href="tableau-def.html"> Les tableaux</a></li>
+    <li><a href="">L'objet</a></li>
+	  </ul>
+  </nav>
   <div class="instruction">Grâce à la variable<br>
     <span class="gray">tonPrénom,</span><br>
     je connais maintenant<br>
     ton prénom<br>
     ce qui me permet de te dire<br>
     <br>
-    <div class="animated tada" id="prenom-affichage">Salut</div>
+    <br>
+    <br>
     <br>
     <br>
     Maintenant,<br>
-    saisis un nouveau prénom </div>
+    <span class="red">saisis un nouveau prénom :</span>
+    <input id="new-prenom-input" class="input" size="10" style="height:35px;" />
+  </div>
   <div class="main around tada animated">
     <div class="coucou"> Coucou </div>
+    <div class="animated tada" id="prenom-affichage"></div>
   </div>
   <br>
-  <input id="new-prenom-input" class="input" size="10" style="height:35px;" />
   <a class="suite" href="fonction-def.html">Suite</a> </div>
 </body>
 </html>
