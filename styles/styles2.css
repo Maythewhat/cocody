@@ -147,12 +147,9 @@ header.bravo {
 	position: absolute;
 }
 .instruction {
-	position: absolute;
 	font-size: 1em;
 	color: #000000;
 	text-align: left;
-	left: 30px;
-	top: 200px;
 }
 input {
 	background-color: #B6D8D0;
