@@ -1,48 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Cocody</title>
-<script src="scripts/jquery-3.3.1.min.js"></script>
-<script src="scripts/variables.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cocody</title>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/condition.js"></script>
 
-<!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
-
-<!-- styles -->
-<link rel="stylesheet" href="styles/reboot.css">
-<link rel="stylesheet" href="styles/styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <!-- styles -->
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/reboot.css">
+    <link rel="stylesheet" href="styles/styles2.css">
+    <link rel="stylesheet" href="styles/animate.css">
 </head>
 
 <body>
-<div class="main around">
-<header class="title">Les conditions</header>
-<nav class="nav">
- <ul id="menu_horizontal">
-  <li><a href="index.html">Accueil</a></li>
-  <li><a href="variables-def.html">Les variables</a></li>
-  <li><a href="fonction-def.html">Les fonctions</a></li>
-  <li><a href="condition-def.html">Les conditions</a></li>
-  <li><a href="tableau-def.html"> Les tableaux</a></li>
-  <li><a href="">L'objet</a></li>
-	</ul>
-</nav>
- <img src="assets/separation.png"/>
-<div class="instruction"><span class="red">Ecris deux prénoms de tes amis</span><br>
-  dans les deux cases vertes.<br>
-  <span class="purple"><br>
-  <br>
-  « if »</span> montre une condition : <span class="purple">« Si...»</span></div>
-<div class="exercice"> <span class="purple">function</span> <span class="blue2"> saluer</span><span class="blue"> (</span><span class="orange">nom</span><span class="blue">) { <span/><br>
-  <span class="purple">if</span><span class="blue"> (</span> <span class="orange"><span class="orange"></span>nom</span> <span class="blue">== ‘
-  <input type="prénom" size="5" style="height:35px;" />
-  ’ || </span><span class="orange">nom </span><span class="blue">== ‘ </span>
-  <input type="prénom" size="5" style="height:35px;" />
-  ’) <br>
-  } </div>
-<a class="suite" href="condition-2.html">Suite</a>
+    <div class="main bounceIn animated">
+        <div class="left">
+            <header class="title tight">Les conditions</header>
+            <div class="instruction">
+                <span class="red">Ecris deux prénoms de tes amis</span>
+                <br> dans les deux cases vertes.
+                <br>
+                <span class="purple">
+                    <br>
+                    <br> « if »
+                </span> montre une condition :
+                <span class="purple">« Si...»</span>
+            </div>
+        </div>
+        <div class="right">
+            <nav class="nav">
+                <ul id="menu_horizontal">
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="variables-def.html">Les variables</a>
+                    </li>
+                    <li>
+                        <a href="fonction-def.html">Les fonctions</a>
+                    </li>
+                    <li>
+                        <a href="condition-def.html">Les conditions</a>
+                    </li>
+                    <li>
+                        <a href="tableau-def.html"> Les tableaux</a>
+                    </li>
+                    <li>
+                        <a href="">L'objet</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="data">
+                <div class="exercice code">
+                    <span class="purple">function</span>
+                    <span class="blue2"> saluer</span>
+                    <span class="blue"> (</span>
+                    <span class="orange">nom</span>
+                    <span class="blue">) {
+                        <span/>
+                        <br>
+                        <span class="purple indent-1">if</span>
+                        <span class="blue"> (</span>
+                        <span class="orange">
+                            <span class="orange"></span>nom</span>
+                        <span class="blue">== ‘
+                            <input id="pote1" type="text" size="5" style="height:35px;" /> ’ || </span>
+                        <span class="orange">nom </span>
+                        <span class="blue">== ‘ </span>
+                        <input id="pote2" type="text" size="5" style="height:35px;" /> ’) {
+                        <br/>
+                        <span class="blue3 indent-2">console.log</span>
+                        <span class="blue">(‘Salut ’ +
+                            <span class="orange">nom</span>
+                            <span class="blue">);
+                                <br>
+                                <span class="indent-1">}</span>
+                                <br> } </div>
+
+                <div id="potes-info">
+
+                </div>
+            </div>
+            <a class="suite" href="condition-2.html">Suite</a>
+        </div>
+    </div>
 </body>
-</html>

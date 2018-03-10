@@ -1,54 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Cocody</title>
-<script src="scripts/jquery-3.3.1.min.js"></script>
-<script src="scripts/coucou.js"></script>
-<!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
 
-<!-- styles -->
-<link rel="stylesheet" href="styles/reboot.css">
-<link rel="stylesheet" href="styles/styles2.css">
-<link rel="stylesheet" href="styles/animate.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cocody</title>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/coucou.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/reboot.css">
+    <link rel="stylesheet" href="styles/styles2.css">
+    <link rel="stylesheet" href="styles/animate.css">
 </head>
 
 <body>
-<div class="main around">
-  <header class="title">Les variables</header>
-  <nav class="nav">
-   <ul id="menu_horizontal">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="variables-def.html">Les variables</a></li>
-    <li><a href="fonction-def.html">Les fonctions</a></li>
-    <li><a href="condition-def.html">Les conditions</a></li>
-    <li><a href="tableau-def.html"> Les tableaux</a></li>
-    <li><a href="">L'objet</a></li>
-	  </ul>
-  </nav>
-  <div class="instruction">Grâce à la variable<br>
-    <span class="gray">tonPrénom,</span><br>
-    je connais maintenant<br>
-    ton prénom<br>
-    ce qui me permet de te dire<br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    Maintenant,<br>
-    <span class="red">saisis un nouveau prénom :</span>
-    <input id="new-prenom-input" class="input" size="10" style="height:35px;" />
-  </div>
-  <div class="main around tada animated">
-    <div class="coucou"> Coucou </div>
-    <div class="animated tada" id="prenom-affichage"></div>
-  </div>
-  <br>
-  <a class="suite" href="fonction-def.html">Suite</a> </div>
+    <div class="main bounceIn animated">
+        <div class="left">
+            <header class="title">Les variables</header>
+            <div class="instruction">Grâce à la variable
+                <br>
+                <span class="gray">tonPrénom,</span>
+                <br> je connais maintenant
+                <br> ton prénom
+                <br> ce qui me permet de te dire
+                <div class="animated tada coucou">
+                    <span>Coucou</span>
+                    <span id="prenom-affichage"></span>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <nav class="nav">
+                <ul id="menu_horizontal">
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="variables-def.html">Les variables</a>
+                    </li>
+                    <li>
+                        <a href="fonction-def.html">Les fonctions</a>
+                    </li>
+                    <li>
+                        <a href="condition-def.html">Les conditions</a>
+                    </li>
+                    <li>
+                        <a href="tableau-def.html"> Les tableaux</a>
+                    </li>
+                    <li>
+                        <a href="">L'objet</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="data animated">
+                Maintenant,
+                <br>
+                <span class="red">saisis un nouveau prénom :</span>
+                <input id="new-prenom-input" class="input" size="10" style="height:35px;" />
+            </div>
+            <a class="suite" href="fonction-def.html">
+                <br>
+                <br> Suite!</a>
+        </div>
+    </div>
 </body>
+
 </html>

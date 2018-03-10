@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Cocody</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cocody</title>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/condition-2.js"></script>
 
-<!-- fonts -->
-<link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
-
-<!-- styles -->
-<link rel="stylesheet" href="styles/reboot.css">
-<link rel="stylesheet" href="styles/styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+    <!-- styles -->
+    <!-- styles -->
+    <link rel="stylesheet" href="styles/reboot.css">
+    <link rel="stylesheet" href="styles/styles2.css">
+    <link rel="stylesheet" href="styles/animate.css">
 </head>
 
 <body>
-<div class="main around">
-  <header class="title">Les conditions</header>
-  <nav class="nav">
-   <ul id="menu_horizontal">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="variables-def.html">Les variables</a></li>
-    <li><a href="fonction-def.html">Les fonctions</a></li>
-    <li><a href="condition-def.html">Les conditions</a></li>
-    <li><a href="tableau-def.html"> Les tableaux</a></li>
-    <li><a href="">L'objet</a></li>
-	  </ul>
-  </nav>
-   <img src="assets/separation.png"/>
-  <div class="instruction">Dans la dernière case, <span class="red">écris le<br>
-    salut que tu veux pour tes deux <br>
-    amis.</span> <br>
-    <br>
-    <span class="purple">«else» </span>signifie <span class="purple">«Sinon...»</span> </div>
-  <div class="exercice"> <span class="purple">else </span><span class="blue">{</span><br>
-    <span class="blue3">console.log</span> <span class="blue">(‘
-    <input type="text" id="prenom-input" size="10" style="height:35px;" />
-    ’ + </span><span class="orange">nom</span><span class="blue">);<br>
-    }</span> </div>
-  <a class="suite" href="condition-3.html">Suite</a> </div>
+    <div class="main bounceIn animated">
+        <div class="left">
+            <header class="title tight">Les conditions</header>
+            <div class="instruction">Dans la dernière case,
+                <span class="red">écris le
+                    <br> salut que tu veux pour tes deux
+                    <br> amis.
+                </span>
+                <br>
+                <br>
+                <span class="purple">«else» </span>signifie
+                <span class="purple">«Sinon...»</span>
+            </div>
+        </div>
+        <div class="right">
+            <nav class="nav">
+                <ul id="menu_horizontal">
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="variables-def.html">Les variables</a>
+                    </li>
+                    <li>
+                        <a href="fonction-def.html">Les fonctions</a>
+                    </li>
+                    <li>
+                        <a href="condition-def.html">Les conditions</a>
+                    </li>
+                    <li>
+                        <a href="tableau-def.html"> Les tableaux</a>
+                    </li>
+                    <li>
+                        <a href="">L'objet</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="data">
+                <div class="exercice code">
+                    <span class="purple">else </span>
+                    <span class="blue">{</span>
+                    <br>
+                    <span class="blue3 indent-1">console.log</span>
+                    <span class="blue">(‘
+                        <input id="salutations" type="text" id="prenom-input" size="10" style="height:35px;" /> ’ + </span>
+                    <span class="orange">nom</span>
+                    <span class="blue">);
+                        <br> }
+                    </span>
+                </div>
+
+                <div id="salutations-info"></div>
+            </div>
+            <a class="suite" href="bravo3.html">Suite</a>
+        </div>
+    </div>
 </body>
-</html>

@@ -9,10 +9,6 @@ body {
     /* background-image: url(../assets/grille2.png); */
 }
 
-body.bravo-body {
-    background: white;
-}
-
 input {
     font-family: 'Chelsea Market', cursive;
 }
@@ -85,7 +81,7 @@ input {
 .left header.title {
     font-size: 3em;
     color: #367E8B;
-    text-align: center;
+    text-align: left;
     margin-bottom: 66px;
 }
 
@@ -101,8 +97,12 @@ input {
     color: #0B4215;
 }
 
+.left header.title.tight {
+    font-size: 2.8em;
+    line-height: 1.7em;
+}
+
 .left .description {
-    font-size: 1em;
     color: #791D1E;
     text-align: left;
 }
@@ -153,17 +153,25 @@ input {
     margin: 160px 0;
 }
 
+.indent-1 {
+    margin-left: 44px;
+}
+
+.indent-2 {
+    margin-left: 88px;
+}
+
 .coucou {
-    text-align: center;
-    font-size: 2em;
+    margin-top: 24px;
+    font-size: 2.5em;
     color: #CDC05B;
+    padding: 0px 12px;
+    text-align: center;
 }
 
 #prenom-affichage {
-    margin-top: 250px;
-    font-size: 2em;
+    font-size: 0.8em;
     color: #0B4215;
-    margin-left: 230px;
 }
 
 .input {
@@ -176,7 +184,16 @@ input {
     margin-top: 25%;
 }
 
-.exercice {}
+img.cocody-bravo {
+    max-width: 600px;
+    align-self: center;
+    animation-duration: 1.5s;
+}
+
+#potes-info, #salutations-info {
+    margin-top: 48px;
+    color: #367E8B;
+}
 
 .instruction {
     font-size: 1em;
@@ -190,6 +207,11 @@ input {
     font-family: 'Chelsea Market';
     font-size: 30px;
     border: 4px solid #5AA373;
+}
+
+.code {
+    font-family: 'Bellefair', serif;
+    font-size: 1.2em;
 }
 
 #total {
