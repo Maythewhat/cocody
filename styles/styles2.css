@@ -1,271 +1,328 @@
 body {
-	font-family: 'Chelsea Market', cursive;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: #B6D8D0;
-	background-image: url(../assets/grille2.png);
+    transition: all 0.375s;
+    font-family: 'Chelsea Market', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B6D8D0;
+    /* background-image: url(../assets/grille2.png); */
 }
+
+body.bravo-body {
+    background: white;
+}
+
 input {
-	font-family: 'Chelsea Market', cursive;
+    font-family: 'Chelsea Market', cursive;
 }
+
+
 /* Container styles */
 
 .main {
-	width: 100%;
-	height: 100%;
-	padding: 24px;
-	display: flex;
-	flex-direction: row;
-	font-size: 1.8em;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8em;
 }
+
 
 /* Text styles*/
 
 .green {
-	color: #8dc740
+    color: #8dc740
 }
+
 .green2 {
-	color: #5AA373;
+    color: #5AA373;
 }
+
 .gray {
-	color: #676767;
+    color: #676767;
 }
+
 .purple {
-	color: #67296B;
+    color: #67296B;
 }
+
 .blue {
-	color: #214A65;
+    color: #214A65;
 }
+
 .blue2 {
-	color: #161CAE;
+    color: #161CAE;
 }
+
 .blue3 {
-	color: darkturquoise;
+    color: darkturquoise;
 }
+
 .orange {
-	color: #AB4021;
+    color: #AB4021;
 }
+
 .red {
-	color: #AA223F;
+    color: #AA223F;
 }
+
 .left {
-	display:flex;
-	flex-direction: column;
-	width: 536px;
+    display: flex;
+    flex-direction: column;
+    width: 536px;
 }
+
 .right {
-	display:flex;
-	flex-direction: column;
-	align-items: flex-end;
-	justify-content: space-between;
-	flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex: 1;
 }
+
 .left header.title {
-	font-size: 3em;
-	color: #367E8B;
-	text-align: center;
-	margin-bottom:66px;
+    font-size: 3em;
+    color: #367E8B;
+    text-align: center;
+    margin-bottom: 66px;
 }
+
 .left header.title.index {
-	font-size: 5em;
-	margin-bottom:0;
-	margin-top: -10px;
+    font-size: 5em;
+    margin-bottom: 0;
+    margin-top: -10px;
 }
+
+.left header.title.bravo {
+    font-size: 5em;
+    text-align: left;
+    color: #0B4215;
+}
+
 .left .description {
-	font-size: 1em;
-	color: #791D1E;
-	text-align: left;
+    font-size: 1em;
+    color: #791D1E;
+    text-align: left;
 }
+
 .right .nav {
-	display : inline;
-	padding : 0 0.5em;
-	list-style-type : none;
-	font-size: 0.6em;
+    display: inline;
+    padding: 0 0.5em;
+    list-style-type: none;
+    font-size: 0.6em;
 }
+
+
 /* Je sélectionne les <li> du menu horizontal */
+
 .right .nav ul#menu_horizontal li {
-	display : inline;
-	padding : 0 0.5em; /* Pour espacer les boutons entre eux */
+    display: inline;
+    padding: 0 0.5em;
+    /* Pour espacer les boutons entre eux */
 }
+
 .right .nav ul#menu_horizontal li a {
-	color: #AB4021;
-	text-decoration: none;
+    color: #AB4021;
+    text-decoration: none;
 }
+
 .right .nav ul#menu_horizontal {
-	list-style-type : none; /* Car sinon les puces se placent n'importe où */
+    list-style-type: none;
+    /* Car sinon les puces se placent n'importe où */
 }
+
 .right .suite {
-	margin-right: 12px;
-	transition: all 0.3s;
-	font-size: 1em;
-	color: #AB4021;
-	text-decoration: none;
+    margin-right: 12px;
+    transition: all 0.3s;
+    font-size: 1em;
+    color: #AB4021;
+    text-decoration: none;
 }
+
 .right .suite:hover {
-	font-size: 1.4em;
+    font-size: 1.4em;
 }
+
+.right .data {
+    border-left: solid 1px #367e8b;
+    align-self: flex-start;
+    padding-left: 60px;
+    flex: 1;
+    margin: 160px 0;
+}
+
 .coucou {
-	position: absolute;
-	top: 280px;
-	left: 70px;
-	text-align: center;
-	font-size: 2em;
-	color: #CDC05B;
+    text-align: center;
+    font-size: 2em;
+    color: #CDC05B;
 }
+
 #prenom-affichage {
-	margin-top: 250px;
-	font-size: 2em;
-	color: #0B4215;
-	margin-left: 230px;
+    margin-top: 250px;
+    font-size: 2em;
+    color: #0B4215;
+    margin-left: 230px;
 }
+
 .input {
-	position: absolute;
-	top: 13.5em;
-	left: 700px;
-	text-align: center;
+    text-align: center;
 }
-header.bravo {
-	position: absolute;
-	font-size: 3em;
-	text-align: left;
-	color: #0B4215;
-	left: 30px;
-	top: 200px;
+
+.tuC {
+    font-size: 2em;
+    color: #7D0B0D;
+    margin-top: 25%;
 }
-.tuSais {
-	position: absolute;
-	font-size: 2em;
-	color: #7D0B0D;
-	left: 30px;
-	top: 350px;
-}
-.exercice {
-	top: 200px;
-	left: 650px;
-	position: absolute;
-}
+
+.exercice {}
+
 .instruction {
-	font-size: 1em;
-	color: #000000;
-	text-align: left;
+    font-size: 1em;
+    color: #000000;
+    text-align: left;
 }
+
 input {
-	background-color: #B6D8D0;
-	color : #5AA373;
-	font-family : 'Chelsea Market';
-	font-size: 30px;
-	border : 4px solid #5AA373;
+    background-color: #B6D8D0;
+    color: #5AA373;
+    font-family: 'Chelsea Market';
+    font-size: 30px;
+    border: 4px solid #5AA373;
 }
+
 #total {
-	color: #0B4215;
-	font-size: 2em;
-	min-height: 56px;
-	top: 400px;
-	right: 450px;
-	position: absolute;
+    color: #0B4215;
+    font-size: 2em;
+    min-height: 56px;
 }
+
 .listeLiens:hover {
-	font-size: 140%;
+    font-size: 140%;
 }
+
 .listeLiens2:hover {
-	font-size: 140%;
+    font-size: 140%;
 }
+
 .listeLiens3:hover {
-	font-size: 140%;
+    font-size: 140%;
 }
+
 .listeLiens4:hover {
-	font-size: 140%;
+    font-size: 140%;
 }
+
 .listeLiens5:hover {
-	font-size: 140%;
+    font-size: 140%;
 }
+
 .listeLiens {
-	text-decoration: none;
-	font-size: 1em;
-	color: #AB4021;
-	text-align: center;
-	position: absolute;
-	left: 940px;
-	top: 50px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #AB4021;
+    text-align: center;
+    position: absolute;
+    left: 940px;
+    top: 50px;
 }
+
 .listeLiens2 {
-	text-decoration: none;
-	font-size: 1em;
-	color: #AB4021;
-	text-align: center;
-	position: absolute;
-	left: 940px;
-	top: 100px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #AB4021;
+    text-align: center;
+    position: absolute;
+    left: 940px;
+    top: 100px;
 }
+
 .listeLiens3 {
-	text-decoration: none;
-	font-size: 1em;
-	color: #AB4021;
-	text-align: center;
-	position: absolute;
-	left: 940px;
-	top: 150px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #AB4021;
+    text-align: center;
+    position: absolute;
+    left: 940px;
+    top: 150px;
 }
+
 .listeLiens4 {
-	text-decoration: none;
-	font-size: 1em;
-	color: #AB4021;
-	text-align: center;
-	position: absolute;
-	left: 940px;
-	top: 200px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #AB4021;
+    text-align: center;
+    position: absolute;
+    left: 940px;
+    top: 200px;
 }
+
 .listeLiens5 {
-	text-decoration: none;
-	font-size: 1em;
-	color: #AB4021;
-	text-align: center;
-	position: absolute;
-	left: 940px;
-	top: 250px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #AB4021;
+    text-align: center;
+    position: absolute;
+    left: 940px;
+    top: 250px;
 }
+
 .nomTheme {
-	font-size: 1em;
-	color: #367E8B;
-	text-align: left;
-	position: absolute;
-	left: 100px;
-	top: 20px;
+    font-size: 1em;
+    color: #367E8B;
+    text-align: left;
+    position: absolute;
+    left: 100px;
+    top: 20px;
 }
+
 table {
-	position: absolute;
-	text-align: center;
-	left: 650px;
-	top: 200px;
+    position: absolute;
+    text-align: center;
+    left: 650px;
+    top: 200px;
 }
+
 .amis {
-	position: absolute;
-	text-align: left;
-	left: 650px;
-	top: 350px;
+    position: absolute;
+    text-align: left;
+    left: 650px;
+    top: 350px;
 }
+
+
 /* Variables schema */
 
-
-
 .variable-schema>* {
-	font-family: 'Bellefair', serif;
-	font-size: 1.2em;
-	position: absolute;
-}
-.variable-schema .variable-declaration {
-	top: 200px;
-	left: 600px;
+    font-family: 'Bellefair', serif;
+    font-size: 1.2em;
 }
 
 @media screen and (max-width: 640px) {
-	.main{
-		flex-direction: column;
-	}
-	.left{
-		width:auto;
-	}
-	
+    body {
+        font-size: 1.2em;
+    }
+    .left header.title {
+        margin-top: 24px;
+        font-size: 2em;
+        margin-bottom: 12px;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .left {
+        width: auto;
+    }
+    .right .data {
+        border-top: solid 1px #367e8b;
+        margin: 48px 0;
+        padding-top: 48px;
+        border-left: none;
+    }
+    .right .nav {
+        position: fixed;
+        top: 0;
+        background: #b6d8d0;
+    }
 }
