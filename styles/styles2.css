@@ -4,6 +4,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+		overflow: hidden;
+
 	align-items: center;
 	background-color: #B6D8D0;/* background-image: url(../assets/grille2.png); */
 }
@@ -58,7 +60,6 @@ input {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	justify-content: space-between;
 	flex: 1;
 }
 .left header.title {
@@ -122,7 +123,7 @@ input {
 	align-self: flex-start;
 	padding-left: 60px;
 	flex: 1;
-	margin: 160px 0;
+	margin: 160px 0 0;
 }
 .indent-1 {
 	margin-left: 44px;
@@ -153,6 +154,7 @@ img.cocody-bravo {
 	max-width: 600px;
 	align-self: center;
 	animation-duration: 1.5s;
+	margin-top: 29px; 
 }
 img.cocody-index {
 	max-width: 600px;
@@ -173,11 +175,22 @@ img.cocody-def {
 	max-width: 550px;
 	align-self: center;
 	animation-duration:2s;
+	margin-top: 29px;
 }
 img.cocody-def2 {
 	max-width: 550px;
 	align-self: center;
 	animation-duration:5s;
+	margin-top: 29px;
+	opacity:0;
+	animation-fill-mode: backwards;
+	
+}
+img.cocody-def6 {
+	max-width: 550px;
+	align-self: center;
+	animation-duration:5s;
+	margin-top: 29px;
 }
 img.cocody-def3 {
 	max-width: 250px;
@@ -335,6 +348,7 @@ table {
 
 @media screen and (max-width: 640px) {
 body {
+	overflow: auto;
 	font-size: 1.2em;
 }
 .left header.title {

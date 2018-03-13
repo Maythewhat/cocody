@@ -13,7 +13,7 @@ $(document).ready(function () {
 		var text = $newPrenomInput.val();
 		
 		$prenomAffichage.text(text);
-		saveData('PRENOM', text);
+		//saveData('PRENOM', text);
 	});
 });
 
