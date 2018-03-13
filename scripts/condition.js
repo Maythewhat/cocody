@@ -9,7 +9,7 @@ $(document).ready(function () {
         var prenom2 = $pote2.val();
 
         if (prenom1 && prenom2) {
-            $potesInfo.text('Tes amis sont ' + prenom1 + ' et ' + prenom2 + ', tu vas donc leur dire Salut !');
+            $potesInfo.text('Tes amis sont ' + prenom1 + ' et ' + prenom2 + ', tu vas donc leur dire « Salut ! »');
         }
         else {
             $potesInfo.text('');
