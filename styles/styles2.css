@@ -142,9 +142,12 @@ input {
 	font-size: 0.8em;
 	color: #0B4215;
 }
-.input {
-	text-align: center;
+
+.resulat-objet span{
+	color: #67296B;
+	
 }
+
 .tuC {
 	font-size: 2em;
 	color: #7D0B0D;
@@ -229,6 +232,11 @@ img.cocody-exercice5 {
 	align-self:center;
 	animation-duration:0.5s;
 }
+img.cocody-fin{
+	max-width: 550px;
+	align-self: center;
+	animation-duration:5s;
+}
 #potes-info, #salutations-info {
 	margin-top: 48px;
 	color: #367E8B;
@@ -249,6 +257,12 @@ input {
 .code {
 	font-family: 'Bellefair', serif;
 	font-size: 1.2em;
+}
+.auRevoir{
+	font-size: 3em;
+	color:#AA223F;
+	text-align: center;
+	line-height: 0.4em;
 }
 #total {
 	color: #0B4215;
@@ -315,6 +329,10 @@ input {
 	left: 940px;
 	top: 250px;
 }
+
+.tableau td {
+	
+}
 .nomTheme {
 	font-size: 1em;
 	color: #367E8B;
@@ -324,16 +342,9 @@ input {
 	top: 20px;
 }
 table {
-	position: absolute;
 	text-align: center;
-	left: 650px;
-	top: 200px;
 }
 .amis {
-	position: absolute;
-	text-align: left;
-	left: 650px;
-	top: 350px;
 }
 /* Variables schema */
 
