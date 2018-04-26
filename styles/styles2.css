@@ -4,8 +4,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-		overflow: hidden;
-
+	overflow: hidden;
 	align-items: center;
 	background-color: #B6D8D0;/* background-image: url(../assets/grille2.png); */
 }
@@ -142,12 +141,9 @@ input {
 	font-size: 0.8em;
 	color: #0B4215;
 }
-
-.resulat-objet span{
+.resulat-objet span {
 	color: #67296B;
-	
 }
-
 .tuC {
 	font-size: 2em;
 	color: #7D0B0D;
@@ -157,85 +153,82 @@ img.cocody-bravo {
 	max-width: 600px;
 	align-self: center;
 	animation-duration: 1.5s;
-	margin-top: 29px; 
+	margin-top: 29px;
 }
 img.cocody-index {
 	max-width: 600px;
 	align-self: center;
 	animation-duration: 2s;
 }
-img.cocody-coucou{
+img.cocody-coucou {
 	max-width: 300px;
-	align-self:center;
+	align-self: center;
 	animation-duration: 2s;
 }
-img.cocody-coucou1{
+img.cocody-coucou1 {
 	max-width: 200px;
-	align-self:center;
+	align-self: center;
 	animation-duration: 2s;
 }
 img.cocody-def {
 	max-width: 550px;
 	align-self: center;
-	animation-duration:2s;
+	animation-duration: 2s;
 	margin-top: 29px;
 }
 img.cocody-def2 {
 	max-width: 550px;
 	align-self: center;
-	animation-duration:5s;
+	animation-duration: 5s;
 	margin-top: 29px;
-	opacity:0;
+	opacity: 0;
 	animation-fill-mode: backwards;
-	
 }
 img.cocody-def6 {
 	max-width: 550px;
 	align-self: center;
-	animation-duration:5s;
+	animation-duration: 5s;
 	margin-top: 29px;
 }
 img.cocody-def3 {
 	max-width: 250px;
 	align-self: center;
-	animation-duration:5s;
+	animation-duration: 5s;
 }
 img.cocody-def4 {
 	max-width: 550px;
 	align-self: center;
-	animation-duration:8s;
+	animation-duration: 8s;
 }
-
 img.cocody-def5 {
 	max-width: 700px;
 	align-self: center;
-	animation-duration:10s;
+	animation-duration: 10s;
 }
-
 img.cocody-exercice {
 	max-width: 200px;
 	align-self: center;
-	animation-duration:1s;
+	animation-duration: 1s;
 }
 img.cocody-exercice2 {
 	max-width: 250px;
-	align-self:center;
-	animation-duration:1s;
+	align-self: center;
+	animation-duration: 1s;
 }
 img.cocody-exercice3 {
 	max-width: 250px;
-	align-self:center;
-	animation-duration:2s;
+	align-self: center;
+	animation-duration: 2s;
 }
 img.cocody-exercice5 {
 	max-width: 250px;
-	align-self:center;
-	animation-duration:0.5s;
+	align-self: center;
+	animation-duration: 0.5s;
 }
-img.cocody-fin{
+img.cocody-fin {
 	max-width: 550px;
 	align-self: center;
-	animation-duration:5s;
+	animation-duration: 5s;
 }
 #potes-info, #salutations-info {
 	margin-top: 48px;
@@ -258,9 +251,9 @@ input {
 	font-family: 'Bellefair', serif;
 	font-size: 1.2em;
 }
-.auRevoir{
+.auRevoir {
 	font-size: 3em;
-	color:#AA223F;
+	color: #AA223F;
 	text-align: center;
 	line-height: 0.4em;
 }
@@ -329,9 +322,7 @@ input {
 	left: 940px;
 	top: 250px;
 }
-
 .tableau td {
-	
 }
 .nomTheme {
 	font-size: 1em;
@@ -352,7 +343,7 @@ table {
 	font-family: 'Bellefair', serif;
 	font-size: 1.2em;
 }
-.variable-objet{
+.variable-objet {
 	font-family: 'Bellefair', serif;
 	font-size: 0.8em;
 }
